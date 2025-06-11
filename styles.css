@@ -147,3 +147,7 @@ button:hover {
     border: 0;
 }
 
+.petpet {
+    background: url('image/jumbotron.jpg') center/cover no-repeat;
+}
+

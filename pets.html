@@ -1,74 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Pet Store</title>
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-
-    <header>
-
-        <h1 id = "Home">Welcome to Our Pet Store</h1>
-
+    <header class ="petpet">
+        <h1>Welcome to Our Pet Store</h1>
         <nav>
-
-            <a href="#Home">Home</a>
-
+            <a href="#">Home</a>
             <a href="pets.html">Pets</a>
-
             <a href="#Contact">Contact</a>
-
         </nav>
-
     </header>
 
-
-
     <main>
-
         <section class="featured">
-
             <h2>Featured Pets</h2>
-
-            <div class="pet-list">
-
-                <div class="pet">
-
-                    <img src="image/capybaras/capybara01.jpg" alt="Cute Capybara">
-
-                    <p>Hyan - American Capybara</p>
-
+            <div class="pet-list" id="pet-list">
+                <!-- <div class="pet">
+                    <img src="img/dog.jpg" alt="Cute Dog">
+                    <p>Charlie - Golden Retriever</p>
                     <button onclick="adoptPet()">Adopt Now</button>
-
                 </div>
-
                 <div class="pet">
-
-                    <img src="image/capybaras/capybara02.jpg" alt="Cute capybara02">
-
-                    <p>Tofu - British Capybara</p>
-
+                    <img src="img/cat.webp" alt="Cute Cat">
+                    <p>Milo - British Shorthair</p>
                     <button onclick="adoptPet()">Adopt Now</button>
-
-                </div>
-
+                </div> -->
             </div>
-
         </section>
-
+        <section class="contact">
+            <!-- <a id="contact"/> -->
+        </section>
     </main>
-
-
 
     <footer id="Contact">
         <div class="contact-container">
@@ -83,8 +50,9 @@
             </div>
         </div>
     </footer>
-    
-      
-</body>
 
+    <script src="loadpets.js"></script>
+    <script src="script.js"></script>
+
+</body>
 </html>

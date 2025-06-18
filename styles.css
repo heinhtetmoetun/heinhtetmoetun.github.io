@@ -155,3 +155,24 @@ button:hover {
     background: url('image/jumbotron.jpg') center/cover no-repeat;
 }
 
+.petcards {
+    display: flex;
+}
+
+.typepets {
+    display: flex; 
+    gap: 24px; 
+    justify-content: center;
+}
+
+.featured {
+    margin: 20px;
+}
+
+.pet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+

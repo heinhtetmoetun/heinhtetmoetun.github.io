@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capybara Quotation</title>
+    <meta name="description" content="Cute Stuff Quotation">
+    <meta name="author" content="You">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>Hyan's Cute Shop</h2>
+                <p>
+                    ABAC Suvarnabhumi Campus<br>
+                    Bangna-Trad Rd, Bang Sao Thong<br>
+                    Samut Prakan, THAILAND<br>
+                    10570<br>
+                    📞: 0943538916
+                </p>
+            </div>
+            <div class="col-sm-6"></div>
+            <div class="col-sm-3 text-center">
+                <h1>QUOTATION</h1>
+                <img src="image/chiikawa.jpg" style="width:100px;height:100px;">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Customer:</h3>
+                <b>Lovely Capy Fan</b><br>
+                123 Kawaii Street<br>
+                Tokyo, Japan<br>
+                Zip 100-0001
+            </div>
+            <div class="col-sm-4">
+                <h3>Ship to:</h3>
+                <b>Lovely Capy Fan</b><br>
+                456 Hanami Road<br>
+                Seoul, Korea<br>
+                Zip 04524
+            </div>
+            <div class="col-sm-4">
+                <h4 id="quotationDate">Date</h4>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Item</button>
+
+        <table class="table table-striped table-bordered table-condensed" id="quotationTable">
+            <thead>
+                <tr>
+                    <th>Quantity</th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr id="sub-total">
+                    <td colspan="3" class="text-right">Subtotal</td>
+                    <td class="text-right" id="subTotal">---</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right">VAT</td>
+                    <td class="text-right" id="vat">--</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right">Shipping &amp; Handling</td>
+                    <td class="text-right" id="bottom-line">0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right">Total Due</td>
+                    <td class="text-right" id="total">--</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p class="cen">
+            <b>Make all payments to:</b><br><i>Hyan's Cute Shop</i><br><b>Questions? Call:</b> 0943538916<br><br><b>THANK YOU FOR YOUR CUTENESS!</b>
+        </p>
+
+        <footer class="cen">Made with 🐾 and 💖</footer>
+    </div>
+
+    <!-- Modal for Add Item -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Add Cute Product</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td>Description</td>
+                            <td>
+                                <select id="newItemDescription" class="form-control">
+                                    <option value="Capybara Plush">Capybara Plush</option>
+                                    <option value="Frog Bucket Hat">Frog Bucket Hat</option>
+                                    <option value="Pikachu Socks">Pikachu Socks</option>
+                                    <option value="Strawberry Milk Pouch">Strawberry Milk Pouch</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Price Per Unit</td>
+                            <td><input type="number" min="0" id="newItemPPU" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Quantity</td>
+                            <td><input type="number" min="0" id="newItemQty" class="form-control"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addItem()">Add Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

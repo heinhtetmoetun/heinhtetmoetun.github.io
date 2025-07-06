@@ -1,0 +1,42 @@
+.inin {
+    color :brown;
+    font-style : Ariel;
+}
+
+div {
+    height: 100px;
+    width : 500px;
+    padding : 20px;
+    margin:20px;
+    border: 10px solid bisque;
+    background-color:beige;
+}
+
+/*.btn{
+    padding:5px;
+    color:black;
+}
+
+.btn-1 {
+    background-color:pink;
+}
+*/
+
+.btn {
+    
+    padding: 10px 20px;
+    background-color: pink;  /* Green background */
+    color: white;   /* Remove underline */
+    border-radius: 8px;         /* Rounded corners */
+    font-style: Italic ;
+    font-size: 20 px;
+   
+    transition: background-color 0.3s ease;
+   
+    display: block;
+
+    text-decoration: none;      
+  }
+  .btn:hover {
+    background-color: #45a049;  /* Slightly darker green on hover */
+  }

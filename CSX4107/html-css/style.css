@@ -1,0 +1,64 @@
+/* Element selectors */
+h1 {
+    color: navy;
+  }
+
+  div {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  span {
+    color: red;
+  }
+
+  strong {
+    font-weight: bold;
+    color: green;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* ID selector */
+  #special {
+    background-color: yellow;
+    
+  }
+
+  /* Class selector */
+  .highlight {
+    background-color: lightgreen;
+    font-style: italic;
+  }
+
+  /* Combination selectors */
+  div span {
+    font-size: 18px;
+  }
+
+  header .highlight {
+    color: purple;
+  }
+
+  #footer a {
+    color: darkorange;
+  }
+
+  /* Hover example */
+  a:hover {
+    text-decoration: underline;
+    color: darkred;
+  }

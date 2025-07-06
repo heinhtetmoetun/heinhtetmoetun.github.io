@@ -1,0 +1,153 @@
+body { 
+
+    font-family: Arial, sans-serif; 
+
+    margin: 0; 
+
+    padding: 0; 
+
+    text-align: center; 
+
+} 
+
+ 
+
+header { 
+
+    background-color: #856840; 
+
+    padding: 20px; 
+
+    color: white; 
+
+} 
+
+ 
+
+nav a { 
+
+    margin: 0 15px; 
+
+    text-decoration: none; 
+
+    color: white; 
+
+    font-weight: bold; 
+
+} 
+
+ 
+
+.featured { 
+
+    margin: 20px; 
+
+} 
+
+ 
+
+.pet-list { 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    gap: 20px; 
+
+} 
+
+ 
+
+.pet { 
+
+    border: 2px solid #ddd; 
+
+    padding: 15px; 
+
+    text-align: center; 
+
+} 
+
+ 
+
+.pet img { 
+
+    width: 150px; 
+
+    height: 150px; 
+
+    border-radius: 10px; 
+
+} 
+
+ 
+
+button { 
+
+    background-color: #856840; 
+
+    color: white; 
+
+    padding: 10px; 
+
+    border: none; 
+
+    cursor: pointer; 
+
+} 
+
+ 
+
+button:hover { 
+
+    background-color: #d6cdbf; 
+
+} 
+
+#Contact {
+    background-color: #856840;
+    padding: 40px 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    color: white;
+    text-align: left;
+    flex: 1 1 300px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.contact-map {
+    flex: 1 1 400px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.petpet {
+    background: url('image/jumbotron.jpg') center/cover no-repeat;
+}
+

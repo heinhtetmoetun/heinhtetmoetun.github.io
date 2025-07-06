@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> VAT Calculator </h1>
+    Base Price
+    <input type = "number" id = "base_price" value = "100" /> 
+    <br>
+    <br>
+    <button onclick="calculateVat()"> Calculate </button>
+    <br/>
+    <br>
+    <span id = "result"> </span>
+    <hr>
+    <h1> REVERSE VAT Calculator </h1>
+    Base Price Reverse
+    <input type = "number" id = "total_price" value = "100" /> 
+    <br>
+    <br>
+
+    <button onclick="reverseVat()"> Calculate </button>
+    <br/>
+    <span id = "re"> </span>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src = "vat.js"></script>
+</html>
